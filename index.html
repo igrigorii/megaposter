@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Web App</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+</head>
+<body>
+    <h1>Welcome to My Web App!</h1>
+    <button id="myButton">Click me!</button>
+
+    <script>
+        document.getElementById('myButton').addEventListener('click', function() {
+            window.Telegram.WebApp.sendData('Button clicked!');
+        });
+
+        window.Telegram.WebApp.ready();
+    </script>
+</body>
+</html>
